@@ -1,7 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  margin: 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -12,6 +19,11 @@ input, button {
   border: none;
   font-family: inherit;
   font-size: inherit;
+}
+
+button, input[type=submit] {
+  background: none;
+  cursor: pointer;
 }
 
 input:focus, button:focus {
@@ -68,6 +80,85 @@ html, body {
   color: #f78434;
 }
 .navigation-list a.active {
-  
+  color: #f78434 !important;
   font-weight: 700;
+}
+
+.header__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__text {
+  width: 465px;
+}
+
+.header__title {
+  position: relative;
+  z-index: 1;
+  margin-right: -160px;
+  font-size: 54px;
+  margin-bottom: 25px;
+  font-weight: 700;
+  line-height: 1.46;
+}
+
+.header__text p {
+  line-height: 1.678;
+  letter-spacing: 1.15px;
+  margin-bottom: 1em;
+}
+
+.form {
+  background: #FFFFFF;
+  box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
+  border-radius: 29px;
+  height: 58px;
+}
+
+.form__label {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 87px;
+  height: 100%;
+  align-items: center;
+}
+.form__label::before {
+  position: absolute;
+  top: 20px;
+  left: 28px;
+  content: "";
+  display: block;
+  width: 24px;
+  height: 19px;
+  background-image: url("./images/main.svg");
+}
+
+.form__input {
+  flex-grow: 1;
+  margin-right: 5px;
+}
+.form__input::-moz-placeholder {
+  color: #bbb;
+}
+.form__input::placeholder {
+  color: #bbb;
+}
+
+.button {
+  display: inline-block;
+  height: 58px;
+  padding-left: 37px;
+  padding-right: 37px;
+  border-radius: 29px;
+  background-color: #f78434;
+  line-height: 58px;
+  font-weight: 700;
+  color: #FFFFFF;
+  transition: 0.3s;
+}
+.button:hover {
+  background-color: #ff6a00;
 }/*# sourceMappingURL=main.css.map */
