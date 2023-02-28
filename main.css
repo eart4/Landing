@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+}
+
+input, button {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input:focus, button:focus {
+  outline: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+html, body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  color: #323232;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.nav {
+  padding-top: 35px;
+  padding-bottom: 33px;
+}
+
+.nav__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.navigation-list ul {
+  display: flex;
+}
+.navigation-list li:not(:last-child) {
+  margin-right: 42px;
+}
+.navigation-list a {
+  color: #323232;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.navigation-list a:hover {
+  color: #f78434;
+}
+.navigation-list a.active {
+  
+  font-weight: 700;
+}/*# sourceMappingURL=main.css.map */
