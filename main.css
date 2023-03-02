@@ -360,4 +360,58 @@ html, body {
   height: 12px;
   background-image: url(./images/play.svg);
   background-repeat: no-repeat;
+}
+
+.serve {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f5f6fa;
+}
+
+.serve__heading {
+  margin-bottom: 45px;
+  text-align: center;
+}
+.serve__heading .title {
+  margin-bottom: 10px;
+}
+
+.serve__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.card-customer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 88px;
+  background: #fff;
+  box-shadow: 0px 40px 52px -22px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.4s;
+}
+.card-customer__icon {
+  fill: #f78434;
+  transition: all 0.3s;
+}
+.card-customer:hover {
+  background: #f78434;
+  color: #FFFFFF;
+}
+.card-customer:hover .card-customer__icon {
+  fill: #fff;
+}
+.card-customer:hover .button {
+  background-color: #fff;
+  color: #f78434;
+}
+
+.card-customes__text {
+  margin-bottom: 25px;
 }/*# sourceMappingURL=main.css.map */
