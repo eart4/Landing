@@ -363,9 +363,21 @@ html, body {
 }
 
 .serve {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  position: relative;
+  padding-top: 0px;
+  padding-bottom: 120px;
+}
+.serve:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
   background-color: #f5f6fa;
+  top: -50%;
+  bottom: 50%;
+  left: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 .serve__heading {
@@ -399,6 +411,7 @@ html, body {
 .card-customer__icon {
   fill: #f78434;
   transition: all 0.3s;
+  margin-bottom: 15px;
 }
 .card-customer:hover {
   background: #f78434;
@@ -414,4 +427,47 @@ html, body {
 
 .card-customes__text {
   margin-bottom: 25px;
+}
+
+.benefits {
+  padding-bottom: 110;
+}
+
+.benefits__heading {
+  padding-bottom: 58px;
+}
+
+.benefits__row {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.benefit__item {
+  text-align: center;
+  cursor: pointer;
+}
+.benefit__item .benefits-item__img {
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.benefit__item .benefits-item__img circle {
+  fill: rgba(88, 190, 191, 0.2);
+  transition: all 0.3s;
+}
+.benefit__item .benefits-item__img path {
+  fill: #58BEBF;
+  transition: all 0.3s;
+}
+.benefit__item:hover .benefits-item__img circle {
+  fill: #f78434;
+}
+.benefit__item:hover .benefits-item__img path {
+  fill: white;
+}
+
+.benefits__item__title {
+  margin-bottom: 2px;
+  font-size: 28px;
 }/*# sourceMappingURL=main.css.map */
