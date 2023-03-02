@@ -331,9 +331,9 @@ html, body {
     display: flex;
     justify-content: space-between;
     border-radius: 20px;
-    align-items: center;
+    align-items: stretch;
     background-color: #58bebf;
-    padding-right: 95px;
+    
 }
 
 
@@ -344,8 +344,16 @@ html, body {
     border-radius: 0 20px 0 0;
 }
 .cta__text {
-    width: 380px;
-
+    width: 555px;
+    
+    padding-left: 95px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(./images/oval-bottom-r.svg) bottom left -186px no-repeat,
+     url(./images/oval-top-r.svg) top right no-repeat;
 
     p{
         width: 320px;
@@ -380,7 +388,7 @@ html, body {
         content: "";
         position: absolute;
         left: 30px;
-        top: 20px;
+        
         top: 50%;
         transform: translateY(-50%);
         display: block;
